@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXEMPLO 08</title>
+    <title>EXEMPLO 09</title>
     <style>
         * {
             font-size: 16px;
@@ -12,14 +12,19 @@
         }
 
         .bloco {
-            background-color: blue;
-            color: white;
+            background-color:blue;
+            color:black;
             padding: 1rem;
             margin: 1rem;
             width: 7rem;
             height: 5rem;
         }
-
+        .b1{
+            background-color: greenyellow ;
+        }
+        .b2{
+            background-color:rgb(255, 47, 47);
+        }  
         .container {
             height: 15rem;
             border: 1px solid grey;
@@ -37,13 +42,11 @@
 
             let num = parseInt(prompt("Informe o primeiro número:"))
 
-            document.write(`<div class="bloco">log_2(${num}) = ${Math.log2(num)}</div>`);  
-            document.write(`<div class="bloco">log_10(${num}) = ${Math.log10(num)}</div>`);
-            document.write(`<div class="bloco">log_e(${Math.E}) = ${Math.log(Math.E)}</div>`);      
-            document.write(`<div class="bloco">raiz(${num}) = ${Math.sqrt(num)}</div>`);     
-            document.write(`<div class="bloco">(${num}) ^ 3 = ${Math.pow(num,3)}</div>`);   
-            document.write(`<div class="bloco">(${num}) = ${Math.pow(num,.5)}</div>`);  
-            
+            if(num % 2 == 0)
+            document.write(`<div class="bloco b1"> O número ${num} é par!</div>`)
+            else
+           document.write(`<div class="bloco b2"> O número ${num} é impar!</div>`)
+
         </script>
     </div>
 </body>
